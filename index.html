@@ -3,936 +3,872 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NammaWeb AI Learning Suite | Premier FinTech & Predictive Analytics for B.Com, BBA, MBA</title>
+  <title>NammaWeb AI Learning Suite | Executive Fintech AI & Analytics</title>
+  <meta name="description" content="Elite Fintech AI & Analytics certifications engineered for B.Com, BBA, and MBA professionals. Transform financial acumen into predictive AI modeling." />
+  <meta name="keywords" content="Fintech AI, Financial Analytics, B.Com AI, MBA Fintech Analytics, NammaWeb AI" />
   
-  <!-- Senior Marketing SEO Meta Suite -->
-  <meta name="description" content="Master FinTech AI & Analytics designed exclusively for B.Com, BBA, and MBA graduates. Bridge high-finance strategy and AI automation with NammaWeb AI Learning Suite." />
-  <meta name="keywords" content="FinTech AI, Financial Analytics, B.Com AI Course, BBA FinTech, MBA Financial Analytics, Predictive Finance, NammaWeb" />
-  <meta property="og:title" content="NammaWeb AI Learning Suite | FinTech & Predictive Analytics Mastery" />
-  <meta property="og:description" content="Elite predictive finance, algorithmic risk, and GenAI modeling engineered for business graduates." />
-  <meta property="og:type" content="website" />
-
-  <!-- Google Fonts & FontAwesome -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
     :root {
-      --bg-primary: #080a0f;
-      --bg-surface: #10141e;
-      --bg-card: rgba(22, 28, 42, 0.7);
-      --accent-gold: #e5b869;
-      --accent-cyan: #00e5ff;
-      --accent-sapphire: #1a42ff;
-      --text-main: #f3f4f6;
-      --text-muted: #9ca3af;
-      --border-subtle: rgba(255, 255, 255, 0.08);
+      --bg-dark: #071315;
+      --surface-dark: #0e1f22;
+      --surface-light: #162c30;
+      --brand-teal: #005a5b;
+      --brand-accent: #178a87;
+      --gold-primary: #d4af37;
+      --gold-hover: #b8972e;
+      --text-main: #f3f6f6;
+      --text-muted: #95a8aa;
+      --border: rgba(212, 175, 55, 0.22);
+      --font-heading: 'Cinzel', serif;
       --font-body: 'Plus Jakarta Sans', sans-serif;
-      --font-display: 'Space Grotesk', sans-serif;
-      --radius-sm: 8px;
-      --radius-md: 16px;
-      --radius-lg: 24px;
-      --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
     }
 
     body {
-      background-color: var(--bg-primary);
-      color: var(--text-main);
       font-family: var(--font-body);
+      background-color: var(--bg-dark);
+      color: var(--text-main);
       line-height: 1.6;
       overflow-x: hidden;
     }
 
-    /* Ambient Background Glow */
-    .glow-bg {
-      position: fixed;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100vw;
-      height: 100vh;
-      background: radial-gradient(circle at 50% 10%, rgba(26, 66, 255, 0.12), transparent 60%),
-                  radial-gradient(circle at 80% 80%, rgba(229, 184, 105, 0.06), transparent 50%);
-      z-index: -1;
-      pointer-events: none;
+    /* Container */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
-    /* Header Navigation */
+    /* Header */
     header {
-      position: fixed;
+      position: sticky;
       top: 0;
-      left: 0;
-      width: 100%;
-      backdrop-filter: blur(18px);
-      background: rgba(8, 10, 15, 0.82);
-      border-bottom: 1px solid var(--border-subtle);
+      background: rgba(7, 19, 21, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
       z-index: 1000;
-      padding: 1rem 5%;
+      padding: 1.1rem 0;
     }
 
     .nav-container {
-      max-width: 1280px;
-      margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
-    .brand-logo {
+    .brand-logo-area {
       display: flex;
       align-items: center;
       gap: 12px;
       text-decoration: none;
     }
 
-    .brand-logo svg {
-      width: 38px;
-      height: 38px;
+    .brand-logo-img {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
     }
 
-    .brand-name {
-      font-family: var(--font-display);
-      font-size: 1.35rem;
-      font-weight: 700;
-      letter-spacing: -0.5px;
+    .brand-title {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      letter-spacing: 1.5px;
       color: #fff;
+      font-weight: 700;
     }
 
-    .brand-name span {
-      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-gold));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    .brand-title span {
+      color: var(--gold-primary);
     }
 
-    nav ul {
+    .nav-links {
       display: flex;
       gap: 2rem;
-      list-style: none;
       align-items: center;
     }
 
-    nav a {
+    .nav-links a {
       color: var(--text-muted);
       text-decoration: none;
       font-weight: 500;
+      transition: color 0.3s;
       font-size: 0.95rem;
-      transition: var(--transition);
     }
 
-    nav a:hover, nav a.active {
-      color: var(--accent-gold);
+    .nav-links a:hover {
+      color: var(--gold-primary);
     }
 
-    .nav-cta {
-      background: linear-gradient(135deg, var(--accent-sapphire), #112896);
-      color: #fff !important;
-      padding: 0.6rem 1.4rem;
-      border-radius: var(--radius-sm);
-      border: 1px solid rgba(255, 255, 255, 0.15);
+    .cta-btn-header {
+      background: linear-gradient(135deg, var(--gold-primary), #977823);
+      color: #000;
       font-weight: 600;
+      padding: 0.6rem 1.4rem;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
     }
 
-    .nav-cta:hover {
-      box-shadow: 0 0 20px rgba(26, 66, 255, 0.4);
+    .cta-btn-header:hover {
       transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.35);
     }
 
     /* Hero Section */
     .hero {
-      padding: 10rem 5% 5rem;
+      padding: 6rem 0 4rem;
+      background: radial-gradient(circle at 50% 20%, #16363a 0%, var(--bg-dark) 70%);
       text-align: center;
-      max-width: 1050px;
-      margin: 0 auto;
     }
 
-    .badge-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 16px;
-      background: rgba(229, 184, 105, 0.1);
-      border: 1px solid rgba(229, 184, 105, 0.3);
+    .hero-badge {
+      display: inline-block;
+      padding: 0.4rem 1.2rem;
+      background: rgba(212, 175, 55, 0.1);
+      border: 1px solid var(--gold-primary);
       border-radius: 50px;
+      color: var(--gold-primary);
       font-size: 0.82rem;
+      letter-spacing: 2px;
       text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--accent-gold);
-      margin-bottom: 1.8rem;
+      margin-bottom: 1.5rem;
     }
 
     .hero h1 {
-      font-family: var(--font-display);
-      font-size: clamp(2.3rem, 5vw, 4rem);
-      line-height: 1.15;
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      line-height: 1.2;
       margin-bottom: 1.5rem;
-      font-weight: 800;
-      letter-spacing: -1px;
+      color: #fff;
     }
 
-    .hero h1 .highlight {
-      background: linear-gradient(135deg, #ffffff 20%, var(--accent-cyan) 70%, var(--accent-gold) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    .hero h1 span {
+      color: var(--gold-primary);
     }
 
-    .hero-subheading {
-      font-size: clamp(1rem, 2vw, 1.25rem);
-      color: var(--text-muted);
+    .hero p {
       max-width: 780px;
       margin: 0 auto 2.5rem;
-      font-weight: 400;
+      color: var(--text-muted);
+      font-size: 1.15rem;
+      line-height: 1.8;
     }
 
-    .hero-buttons {
+    /* 6 Lines Requirement Section */
+    .authority-breakdown {
+      padding: 4.5rem 0;
+      background: var(--surface-dark);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .authority-card {
+      background: rgba(22, 44, 48, 0.45);
+      border-left: 4px solid var(--gold-primary);
+      border-radius: 4px;
+      padding: 2.5rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .authority-card h2 {
+      font-family: var(--font-heading);
+      color: var(--gold-primary);
+      margin-bottom: 1.5rem;
+      font-size: 1.6rem;
+    }
+
+    .authority-lines {
+      list-style: none;
       display: flex;
-      gap: 1.2rem;
-      justify-content: center;
-      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 1.1rem;
     }
 
-    .btn-gold {
-      background: linear-gradient(135deg, #e5b869, #b98b39);
-      color: #080a0f;
-      padding: 1rem 2.2rem;
-      border-radius: var(--radius-sm);
-      font-weight: 700;
-      text-decoration: none;
-      box-shadow: 0 10px 25px rgba(229, 184, 105, 0.25);
-      transition: var(--transition);
+    .authority-lines li {
+      font-size: 1.05rem;
+      color: #e4eaea;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
     }
 
-    .btn-gold:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 14px 30px rgba(229, 184, 105, 0.4);
+    .authority-lines i {
+      color: var(--gold-primary);
+      margin-top: 5px;
     }
 
-    .btn-outline {
-      background: transparent;
-      color: #fff;
-      padding: 1rem 2.2rem;
-      border-radius: var(--radius-sm);
-      border: 1px solid var(--border-subtle);
-      font-weight: 600;
-      text-decoration: none;
-      transition: var(--transition);
-    }
-
-    .btn-outline:hover {
-      border-color: var(--accent-cyan);
-      background: rgba(0, 229, 255, 0.05);
-    }
-
-    /* 6-Line Overview Matrix Section */
-    .matrix-section {
-      padding: 5rem 5%;
-      background: var(--bg-surface);
-      border-top: 1px solid var(--border-subtle);
-      border-bottom: 1px solid var(--border-subtle);
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
+    /* Curated Gallery Section */
+    .gallery-section {
+      padding: 5rem 0;
     }
 
     .section-title {
       text-align: center;
-      margin-bottom: 3.5rem;
-    }
-
-    .section-title span {
-      color: var(--accent-cyan);
-      text-transform: uppercase;
-      font-size: 0.85rem;
-      font-weight: 700;
-      letter-spacing: 2px;
+      margin-bottom: 3rem;
     }
 
     .section-title h2 {
-      font-family: var(--font-display);
+      font-family: var(--font-heading);
       font-size: 2.2rem;
-      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
     }
 
-    .six-line-box {
-      background: var(--bg-card);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-lg);
-      padding: 3rem;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-    }
-
-    .six-line-list {
-      list-style: none;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-
-    .six-line-item {
-      display: flex;
-      gap: 1.2rem;
-      align-items: flex-start;
-    }
-
-    .line-num {
-      font-family: var(--font-display);
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: var(--accent-gold);
-      background: rgba(229, 184, 105, 0.1);
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      border: 1px solid rgba(229, 184, 105, 0.3);
-    }
-
-    .line-text {
-      font-size: 1.05rem;
-      color: #e2e8f0;
-      padding-top: 4px;
-    }
-
-    .line-text strong {
-      color: #fff;
-      font-weight: 700;
-    }
-
-    /* Curated Image Showcase Section */
-    .gallery-section {
-      padding: 6rem 5%;
+    .section-title p {
+      color: var(--gold-primary);
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      letter-spacing: 2px;
     }
 
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.8rem;
+      gap: 1.5rem;
     }
 
     .gallery-card {
-      position: relative;
-      border-radius: var(--radius-md);
+      border-radius: 8px;
       overflow: hidden;
-      border: 1px solid var(--border-subtle);
-      background: var(--bg-surface);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-      group: relative;
+      background: var(--surface-dark);
+      border: 1px solid rgba(255,255,255,0.08);
+      transition: transform 0.3s ease, border-color 0.3s;
+    }
+
+    .gallery-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--gold-primary);
     }
 
     .gallery-card img {
       width: 100%;
-      height: 240px;
+      height: 220px;
       object-fit: cover;
       display: block;
-      transition: var(--transition);
-      filter: grayscale(15%) contrast(105%);
     }
 
-    .gallery-card:hover img {
-      transform: scale(1.05);
-      filter: grayscale(0%);
+    .gallery-card .info {
+      padding: 1.2rem;
     }
 
-    .gallery-overlay {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: linear-gradient(to top, rgba(8, 10, 15, 0.95) 10%, rgba(8, 10, 15, 0));
-      padding: 1.5rem 1.2rem 1rem;
-    }
-
-    .gallery-overlay h3 {
-      font-size: 1.1rem;
+    .gallery-card .info h4 {
       color: #fff;
-      font-weight: 700;
+      font-size: 1.05rem;
+      margin-bottom: 0.3rem;
     }
 
-    .gallery-overlay p {
+    .gallery-card .info span {
       font-size: 0.85rem;
-      color: var(--accent-cyan);
+      color: var(--gold-primary);
     }
 
-    /* Booking & Investment Section (Indian Pricing) */
+    /* Pricing & Booking */
     .pricing-section {
-      padding: 6rem 5%;
-      background: radial-gradient(circle at center, rgba(16, 20, 30, 0.9) 0%, var(--bg-primary) 100%);
-      border-top: 1px solid var(--border-subtle);
+      padding: 5.5rem 0;
+      background: #091719;
+      border-top: 1px solid var(--border);
     }
 
     .pricing-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 2rem;
-      margin-top: 3.5rem;
+      margin-top: 2.5rem;
     }
 
     .pricing-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-lg);
-      padding: 2.5rem;
+      background: var(--surface-dark);
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      border-radius: 8px;
+      padding: 2.5rem 2rem;
       position: relative;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      backdrop-filter: blur(12px);
-      transition: var(--transition);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .pricing-card.popular {
+      border: 2px solid var(--gold-primary);
+      transform: scale(1.03);
+      box-shadow: 0 10px 40px rgba(212, 175, 55, 0.15);
     }
 
     .pricing-card:hover {
-      border-color: var(--accent-gold);
       transform: translateY(-8px);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-    }
-
-    .pricing-card.featured {
-      border: 2px solid var(--accent-gold);
-      background: linear-gradient(180deg, rgba(22, 28, 42, 0.9) 0%, rgba(14, 18, 28, 0.9) 100%);
     }
 
     .popular-tag {
       position: absolute;
       top: -14px;
-      right: 25px;
-      background: linear-gradient(135deg, var(--accent-gold), #966b17);
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--gold-primary);
       color: #000;
-      font-size: 0.72rem;
-      font-weight: 800;
-      padding: 4px 14px;
-      border-radius: 50px;
+      font-size: 0.75rem;
+      font-weight: 700;
       text-transform: uppercase;
+      padding: 0.25rem 1.2rem;
+      border-radius: 20px;
       letter-spacing: 1px;
     }
 
     .plan-duration {
-      font-size: 1.25rem;
-      font-weight: 700;
+      font-size: 1.3rem;
+      font-family: var(--font-heading);
       color: #fff;
-    }
-
-    .plan-target {
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      margin-bottom: 1.5rem;
-    }
-
-    .plan-price {
-      font-family: var(--font-display);
-      font-size: 2.8rem;
-      font-weight: 800;
-      color: #fff;
-      display: flex;
-      align-items: baseline;
-      gap: 5px;
       margin-bottom: 0.5rem;
     }
 
-    .plan-price .currency {
-      font-size: 1.5rem;
-      color: var(--accent-gold);
+    .plan-target {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
     }
 
-    .plan-price .sub {
+    .price-box {
+      margin-bottom: 2rem;
+    }
+
+    .price {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--gold-primary);
+    }
+
+    .price sub {
       font-size: 0.9rem;
       color: var(--text-muted);
-      font-weight: 400;
     }
 
     .plan-features {
       list-style: none;
-      margin: 1.8rem 0;
+      margin-bottom: 2rem;
       display: flex;
       flex-direction: column;
       gap: 0.8rem;
     }
 
     .plan-features li {
+      font-size: 0.92rem;
+      color: #cbd5d6;
       display: flex;
       align-items: center;
       gap: 10px;
-      font-size: 0.92rem;
-      color: #d1d5db;
     }
 
     .plan-features li i {
-      color: var(--accent-cyan);
+      color: var(--gold-primary);
       font-size: 0.85rem;
     }
 
-    .btn-book {
-      display: block;
+    .book-btn {
       width: 100%;
-      text-align: center;
-      padding: 1rem;
-      border-radius: var(--radius-sm);
-      font-weight: 700;
-      text-decoration: none;
-      transition: var(--transition);
+      background: transparent;
+      border: 1px solid var(--gold-primary);
+      color: var(--gold-primary);
+      padding: 0.9rem;
+      border-radius: 4px;
+      font-weight: 600;
       cursor: pointer;
-      border: none;
+      font-size: 0.95rem;
+      transition: all 0.3s;
     }
 
-    .btn-book-primary {
-      background: linear-gradient(135deg, var(--accent-gold), #b98b39);
+    .book-btn:hover, .pricing-card.popular .book-btn {
+      background: var(--gold-primary);
       color: #000;
     }
 
-    .btn-book-primary:hover {
-      box-shadow: 0 0 25px rgba(229, 184, 105, 0.4);
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.8);
+      backdrop-filter: blur(8px);
+      z-index: 2000;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
     }
 
-    .btn-book-secondary {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid var(--border-subtle);
+    .modal.active {
+      display: flex;
+    }
+
+    .modal-content {
+      background: var(--surface-dark);
+      border: 1px solid var(--gold-primary);
+      width: 100%;
+      max-width: 480px;
+      padding: 2.5rem;
+      border-radius: 8px;
+      position: relative;
+    }
+
+    .close-modal {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .form-group input, .form-group select {
+      width: 100%;
+      padding: 0.8rem;
+      background: #091719;
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 4px;
       color: #fff;
     }
 
-    .btn-book-secondary:hover {
-      background: rgba(255, 255, 255, 0.1);
-      border-color: #fff;
+    .submit-enroll-btn {
+      width: 100%;
+      padding: 0.9rem;
+      background: var(--gold-primary);
+      border: none;
+      color: #000;
+      font-weight: 700;
+      border-radius: 4px;
+      cursor: pointer;
     }
 
-    /* Luxury Footer */
-    footer {
-      background: #040507;
-      border-top: 1px solid var(--border-subtle);
-      padding: 4rem 5% 2rem;
-      text-align: center;
+    /* SEO Articles Section */
+    .blog-preview {
+      padding: 5rem 0;
+      background: var(--surface-dark);
     }
 
-    .footer-content {
-      max-width: 600px;
-      margin: 0 auto;
+    .article-box {
+      background: rgba(7, 19, 21, 0.6);
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      border-radius: 8px;
+      padding: 2rem;
       display: flex;
       flex-direction: column;
-      align-items: center;
       gap: 1rem;
     }
 
-    .footer-logo {
-      display: flex;
-      flex-direction: column;
+    .article-box h3 {
+      font-family: var(--font-heading);
+      color: #fff;
+    }
+
+    .read-more-link {
+      color: var(--gold-primary);
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
       align-items: center;
       gap: 8px;
     }
 
-    .footer-logo svg {
-      width: 44px;
-      height: 44px;
+    /* Footer */
+    footer {
+      background: #040a0b;
+      padding: 4.5rem 0 2rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      text-align: center;
     }
 
-    .footer-brand {
-      font-family: var(--font-display);
+    .footer-logo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1.8rem;
+    }
+
+    .footer-logo-img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin-bottom: 0.6rem;
+    }
+
+    .footer-brand-title {
+      font-family: var(--font-heading);
       font-size: 1.4rem;
-      font-weight: 700;
+      letter-spacing: 2px;
       color: #fff;
     }
 
     .footer-email {
-      font-size: 0.95rem;
-      color: var(--accent-cyan);
+      font-size: 1.05rem;
+      color: var(--gold-primary);
       text-decoration: none;
+      display: inline-block;
+      margin-top: 0.4rem;
+      font-weight: 500;
       letter-spacing: 0.5px;
-      transition: var(--transition);
     }
 
     .footer-email:hover {
-      color: var(--accent-gold);
       text-decoration: underline;
     }
 
-    .footer-rights {
+    .footer-meta {
+      color: var(--text-muted);
+      font-size: 0.85rem;
       margin-top: 2rem;
-      font-size: 0.8rem;
-      color: #4b5563;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      padding-top: 1.5rem;
     }
 
-    /* Front-End WhatsApp Slide-in / Popup Modal */
-    .whatsapp-popup {
+    /* Floating WhatsApp Popup Widget */
+    .whatsapp-widget {
       position: fixed;
       bottom: 25px;
       right: 25px;
       z-index: 9999;
-      background: #111b21;
-      border: 1px solid #25d366;
-      border-radius: var(--radius-md);
-      width: 320px;
-      padding: 1.25rem;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(37, 211, 102, 0.2);
-      transform: translateY(150px);
-      opacity: 0;
-      pointer-events: none;
-      transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.4s ease;
-    }
-
-    .whatsapp-popup.active {
-      transform: translateY(0);
-      opacity: 1;
-      pointer-events: auto;
-    }
-
-    .popup-close {
-      position: absolute;
-      top: 10px;
-      right: 12px;
-      color: #8696a0;
-      font-size: 1rem;
-      background: transparent;
-      border: none;
-      cursor: pointer;
-    }
-
-    .popup-header {
       display: flex;
-      align-items: center;
+      align-items: flex-end;
+      flex-direction: column;
       gap: 10px;
-      margin-bottom: 0.75rem;
     }
 
-    .popup-header i {
-      font-size: 1.8rem;
-      color: #25d366;
-    }
-
-    .popup-header h4 {
-      font-size: 1rem;
+    .whatsapp-bubble {
+      background: #102629;
+      border: 1px solid var(--gold-primary);
       color: #fff;
-    }
-
-    .popup-body p {
+      padding: 0.8rem 1.2rem;
+      border-radius: 8px 8px 0 8px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.5);
       font-size: 0.85rem;
-      color: #d1d7db;
-      line-height: 1.4;
-      margin-bottom: 1rem;
+      max-width: 250px;
+      position: relative;
+      animation: floatPulse 3s infinite ease-in-out;
     }
 
-    .popup-btn {
+    .whatsapp-btn {
+      background: #25D366;
+      color: #fff;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
-      background: #25d366;
-      color: #0b141a;
       text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 700;
-      padding: 0.7rem;
-      border-radius: var(--radius-sm);
-      transition: var(--transition);
+      font-size: 30px;
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+      transition: transform 0.3s;
     }
 
-    .popup-btn:hover {
-      background: #1ebc59;
+    .whatsapp-btn:hover {
+      transform: scale(1.1);
+    }
+
+    @keyframes floatPulse {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-4px); }
     }
 
     @media (max-width: 768px) {
-      nav ul {
-        display: none;
-      }
-      .six-line-box {
-        padding: 1.5rem;
-      }
-      .whatsapp-popup {
-        width: 90%;
-        left: 5%;
-        right: 5%;
-        bottom: 15px;
-      }
+      .nav-links { display: none; }
+      .pricing-card.popular { transform: none; }
     }
   </style>
 </head>
 <body>
 
-  <div class="glow-bg"></div>
-
-  <!-- Header Navigation -->
+  <!-- Header -->
   <header>
-    <div class="nav-container">
-      <a href="index.html" class="brand-logo">
-        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="50" cy="50" r="45" stroke="url(#goldGrad)" stroke-width="6"/>
-          <path d="M30 65L50 30L70 65" stroke="url(#cyanGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="50" cy="45" r="7" fill="#e5b869"/>
-          <defs>
-            <linearGradient id="goldGrad" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#e5b869"/>
-              <stop offset="1" stop-color="#b98b39"/>
-            </linearGradient>
-            <linearGradient id="cyanGrad" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#00e5ff"/>
-              <stop offset="1" stop-color="#1a42ff"/>
-            </linearGradient>
-          </defs>
-        </svg>
-        <span class="brand-name">nammaweb <span>ai</span></span>
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo-area">
+        <img src="logo.png" alt="NammaWeb Logo" class="brand-logo-img" />
+        <div class="brand-title">NAMMA<span>WEB</span></div>
       </a>
-
-      <nav>
-        <ul>
-          <li><a href="index.html" class="active">Learning Suite</a></li>
-          <li><a href="#matrix">Capabilities</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="blog.html">SEO Insights & Blog</a></li>
-          <li><a href="#pricing" class="nav-cta">Enrollment</a></li>
-        </ul>
-      </nav>
+      <div class="nav-links">
+        <a href="#curriculum">Fintech AI Blueprint</a>
+        <a href="#gallery">Ecosystem</a>
+        <a href="#pricing">Cohorts & Fees</a>
+        <a href="blog.html">Executive Blog</a>
+      </div>
+      <a href="#pricing" class="cta-btn-header">Enroll Now</a>
     </div>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="badge-pill">
-      <i class="fa-solid fa-gem"></i> Next-Gen FinTech Leadership Suite
-    </div>
-    <h1>
-      Architecting the Future of High Finance with <br/>
-      <span class="highlight">FinTech AI & Predictive Analytics</span>
-    </h1>
-    <p class="hero-subheading">
-      Specifically designed for ambitious <strong>B.Com, BBA, and MBA</strong> graduates and executives. Transform classical accounting and corporate governance into quantitative algorithmic mastery.
-    </p>
-    <div class="hero-buttons">
-      <a href="#pricing" class="btn-gold">View Enrollment Plans</a>
-      <a href="blog.html" class="btn-outline">Read FinTech Industry Report</a>
+    <div class="container">
+      <div class="hero-badge">Curated AI & Data Academy for Commerce & Management</div>
+      <h1>Fintech AI & Predictive Analytics<br />For <span>B.Com, BBA & MBA</span> Leaders</h1>
+      <p>
+        Move beyond traditional spreadsheets and legacy financial statements. Master high-frequency algorithms, autonomous credit scoring, LLM financial copilots, and risk intelligence built for institutional high-growth firms.
+      </p>
+      <a href="#pricing" class="cta-btn-header" style="font-size: 1.05rem; padding: 0.9rem 2.2rem;">Select Your Learning Sprint</a>
     </div>
   </section>
 
-  <!-- 6-Line Architectural Overview Matrix -->
-  <section id="matrix" class="matrix-section">
+  <!-- 6-Line Required Fintech AI & Analytics Section -->
+  <section class="authority-breakdown" id="curriculum">
     <div class="container">
-      <div class="section-title">
-        <span>Executive Summary</span>
-        <h2>FinTech AI & Analytics (B.Com / BBA / MBA)</h2>
-      </div>
-
-      <div class="six-line-box">
-        <ul class="six-line-list">
-          <li class="six-line-item">
-            <span class="line-num">01</span>
-            <div class="line-text">
-              <strong>B.Com Specialization:</strong> Equips commerce graduates with automated computational bookkeeping, generative ledger analysis, and real-time reconciliation using state-of-the-art AI accounting pipelines.
-            </div>
+      <div class="authority-card">
+        <h2>Fintech AI & Analytics (B.Com / BBA / MBA)</h2>
+        <ul class="authority-lines">
+          <li>
+            <i class="fa-solid fa-check-circle"></i>
+            <span><strong>Line 1:</strong> Engineered specifically for B.Com, BBA, and MBA scholars to bridge the critical gap between classical balance sheet accounting and autonomous algorithmic finance.</span>
           </li>
-          <li class="six-line-item">
-            <span class="line-num">02</span>
-            <div class="line-text">
-              <strong>BBA Business Integration:</strong> Empowers business administrators to lead corporate FinTech modernization, mastering digital lending models, payment gateway APIs, and consumer financial intelligence.
-            </div>
+          <li>
+            <i class="fa-solid fa-check-circle"></i>
+            <span><strong>Line 2:</strong> Imparts hands-on mastery of predictive machine learning models that automate institutional loan underwriting, risk scoring, and credit default forecasting.</span>
           </li>
-          <li class="six-line-item">
-            <span class="line-num">03</span>
-            <div class="line-text">
-              <strong>MBA Strategic Analytics:</strong> Trains executive postgraduates in quantitative algorithmic trading, predictive capital budgeting, enterprise risk simulations, and deep neural portfolio diversification.
-            </div>
+          <li>
+            <i class="fa-solid fa-check-circle"></i>
+            <span><strong>Line 3:</strong> Unlocks algorithmic trading architectures, quantitative portfolio optimization, and automated market sentiment ingestion through real-time financial NLP.</span>
           </li>
-          <li class="six-line-item">
-            <span class="line-num">04</span>
-            <div class="line-text">
-              <strong>Predictive Modeling & Big Data:</strong> Bridges standard balance sheet evaluation with Big Data frameworks, enabling instant forecasting of equity shifts, credit defaults, and liquid cash margins.
-            </div>
+          <li>
+            <i class="fa-solid fa-check-circle"></i>
+            <span><strong>Line 4:</strong> Demystifies fraud detection networks by training deep learning graph analytics to detect anomalous multi-party UPI, SWIFT, and crypto transaction chains.</span>
           </li>
-          <li class="six-line-item">
-            <span class="line-num">05</span>
-            <div class="line-text">
-              <strong>Autonomous Compliance & RegTech:</strong> Delivers deep workflow automation for statutory RBI/SEBI reporting, proactive fraud detection engines, and AML (Anti-Money Laundering) verification networks.
-            </div>
+          <li>
+            <i class="fa-solid fa-check-circle"></i>
+            <span><strong>Line 5:</strong> Empowers business graduates to deploy custom Large Language Model (LLM) financial analysts for instant regulatory compliance, SEBI audits, and 10-K earnings parsing.</span>
           </li>
-          <li class="six-line-item">
-            <span class="line-num">06</span>
-            <div class="line-text">
-              <strong>Career & Corporate Dominance:</strong> Converts conventional finance scholars into high-value FinTech Product Managers, Investment Quants, and Chief Analytics Advisors commanding top-tier remuneration.
-            </div>
+          <li>
+            <i class="fa-solid fa-check-circle"></i>
+            <span><strong>Line 6:</strong> Positions commerce and management professionals for top-decile global compensation packages as Certified AI Financial Strategists and Fintech Product Managers.</span>
           </li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- Curated Image Showcase (4 High-Resolution FinTech AI Visuals) -->
-  <section id="gallery" class="gallery-section">
+  <!-- Curated 4 Photos Gallery Section -->
+  <section class="gallery-section" id="gallery">
     <div class="container">
       <div class="section-title">
-        <span>Curriculum In Action</span>
-        <h2>FinTech AI & Analytics Visual Ecosystem</h2>
+        <p>Institutional Immersive Experience</p>
+        <h2>Fintech AI & Analytics in Action</h2>
       </div>
-
       <div class="gallery-grid">
-        <!-- Photo 1: B.Com Analytics -->
         <div class="gallery-card">
-          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="B.Com AI Accounting and Financial Analytics Dashboard" loading="lazy" />
-          <div class="gallery-overlay">
-            <h3>B.Com AI Accounting</h3>
-            <p>Automated Ledgers & Predictive Cashflow</p>
+          <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=80" alt="Algorithmic Trading Wall">
+          <div class="info">
+            <h4>Quantitative Market Trading</h4>
+            <span>High-Frequency Execution Models</span>
           </div>
         </div>
-
-        <!-- Photo 2: BBA FinTech Strategy -->
         <div class="gallery-card">
-          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="BBA FinTech Business Strategy and Data Analytics" loading="lazy" />
-          <div class="gallery-overlay">
-            <h3>BBA Digital Banking</h3>
-            <p>Payment Architectures & Analytics</p>
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Predictive Analytics Dashboard">
+          <div class="info">
+            <h4>Credit & Risk Intelligence</h4>
+            <span>Automated Underwriting Architectures</span>
           </div>
         </div>
-
-        <!-- Photo 3: MBA Quantitative Risk -->
         <div class="gallery-card">
-          <img src="https://images.unsplash.com/photo-1642543492481-44e81e3914a7?auto=format&fit=crop&w=800&q=80" alt="MBA Algorithmic Risk Modeling and Financial AI" loading="lazy" />
-          <div class="gallery-overlay">
-            <h3>MBA Risk Analytics</h3>
-            <p>Monte Carlo Simulations & Hedging</p>
+          <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" alt="B.Com and MBA Fintech Cohort">
+          <div class="info">
+            <h4>Executive Cohort Labs</h4>
+            <span>B.Com, BBA & MBA Financial Leaders</span>
           </div>
         </div>
-
-        <!-- Photo 4: Algorithmic Market Forecasting -->
         <div class="gallery-card">
-          <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=80" alt="FinTech AI Trading Neural Networks" loading="lazy" />
-          <div class="gallery-overlay">
-            <h3>Market Neural Engines</h3>
-            <p>High-Frequency Sentiment Analysis</p>
+          <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80" alt="Neural Financial Security Network">
+          <div class="info">
+            <h4>Financial Fraud Analytics</h4>
+            <span>Deep Learning Graph Detection</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Booking Section (Indian Pricing: 30, 60, 125 Days) -->
-  <section id="pricing" class="pricing-section">
+  <!-- Booking & Pricing Section (30, 60, 125 Days in INR) -->
+  <section class="pricing-section" id="pricing">
     <div class="container">
       <div class="section-title">
-        <span>Curated Cohorts</span>
-        <h2>Secure Your Executive Seat</h2>
+        <p>Direct Enrolment Cohorts</p>
+        <h2>Invest In Your AI Leadership Trajectory</h2>
       </div>
-
       <div class="pricing-grid">
-        <!-- 30 Days Foundation -->
+        
+        <!-- 30 Days -->
         <div class="pricing-card">
           <div>
-            <div class="plan-duration">30 Days Accelerator</div>
-            <div class="plan-target">Ideal for B.Com & Entry Finance Graduates</div>
-            <div class="plan-price">
-              <span class="currency">₹</span>14,999 <span class="sub">/ One-time</span>
+            <div class="plan-duration">30 Days Intensive</div>
+            <div class="plan-target">Foundational Sprint (B.Com & BBA Undergrads)</div>
+            <div class="price-box">
+              <div class="price">₹14,999 <sub>+ GST</sub></div>
             </div>
             <ul class="plan-features">
-              <li><i class="fa-solid fa-check-circle"></i> AI Automated Financial Ledgers</li>
-              <li><i class="fa-solid fa-check-circle"></i> Python for Excel & Financial Modeling</li>
-              <li><i class="fa-solid fa-check-circle"></i> PowerBI FinTech Dashboard Engineering</li>
-              <li><i class="fa-solid fa-check-circle"></i> Industry Assessment & Certification</li>
+              <li><i class="fa-solid fa-circle-check"></i> Python for Finance & Pandas Foundations</li>
+              <li><i class="fa-solid fa-circle-check"></i> Credit Risk Modeling & Scoring Systems</li>
+              <li><i class="fa-solid fa-circle-check"></i> Automated Excel to AI Integration</li>
+              <li><i class="fa-solid fa-circle-check"></i> Direct Mentor Feedback & Code Reviews</li>
+              <li><i class="fa-solid fa-circle-check"></i> Certificate of Completion</li>
             </ul>
           </div>
-          <button class="btn-book btn-book-secondary" onclick="triggerBooking('30-Day Cohort', '₹14,999')">Reserve 30-Day Slot</button>
+          <button class="book-btn" onclick="openBookingModal('30 Days Intensive', '₹14,999')">Reserve Seat</button>
         </div>
 
-        <!-- 60 Days Executive (Popular) -->
-        <div class="pricing-card featured">
-          <span class="popular-tag">Recommended</span>
+        <!-- 60 Days -->
+        <div class="pricing-card popular">
+          <div class="popular-tag">Most High-Value</div>
           <div>
-            <div class="plan-duration">60 Days Executive</div>
-            <div class="plan-target">Designed for BBA & Mid-Level Finance Analysts</div>
-            <div class="plan-price">
-              <span class="currency">₹</span>27,999 <span class="sub">/ One-time</span>
+            <div class="plan-duration">60 Days Immersion</div>
+            <div class="plan-target">Advanced Analytics (BBA & MBA Graduates)</div>
+            <div class="price-box">
+              <div class="price">₹28,500 <sub>+ GST</sub></div>
             </div>
             <ul class="plan-features">
-              <li><i class="fa-solid fa-check-circle"></i> Everything in 30 Days Program</li>
-              <li><i class="fa-solid fa-check-circle"></i> Fraud Detection & AML Neural Classifiers</li>
-              <li><i class="fa-solid fa-check-circle"></i> Credit Scoring & Lending ML Models</li>
-              <li><i class="fa-solid fa-check-circle"></i> 1-on-1 Placement Advisory & Resume Rebrand</li>
+              <li><i class="fa-solid fa-circle-check"></i> Everything in 30-Day Foundation</li>
+              <li><i class="fa-solid fa-circle-check"></i> Algorithmic Trading Bot Engineering</li>
+              <li><i class="fa-solid fa-circle-check"></i> Real-time Sentiment NLP with Financial News</li>
+              <li><i class="fa-solid fa-circle-check"></i> Fraud Anomaly Detection with ML</li>
+              <li><i class="fa-solid fa-circle-check"></i> 1-on-1 Executive Placement Portfolio Audit</li>
             </ul>
           </div>
-          <button class="btn-book btn-book-primary" onclick="triggerBooking('60-Day Executive', '₹27,999')">Enroll In 60-Day Program</button>
+          <button class="book-btn" onclick="openBookingModal('60 Days Immersion', '₹28,500')">Reserve Seat</button>
         </div>
 
-        <!-- 125 Days Fellow / Elite -->
+        <!-- 125 Days -->
         <div class="pricing-card">
           <div>
-            <div class="plan-duration">125 Days Fellowship</div>
-            <div class="plan-target">Tailored for MBA, CFA Aspirants & Strategists</div>
-            <div class="plan-price">
-              <span class="currency">₹</span>54,999 <span class="sub">/ One-time</span>
+            <div class="plan-duration">125 Days Mastery</div>
+            <div class="plan-target">Executive Fellowship (MBA Leaders & Consultants)</div>
+            <div class="price-box">
+              <div class="price">₹54,000 <sub>+ GST</sub></div>
             </div>
             <ul class="plan-features">
-              <li><i class="fa-solid fa-check-circle"></i> Complete FinTech & Analytics Architecture</li>
-              <li><i class="fa-solid fa-check-circle"></i> Algorithmic Trading & Arbitrage Systems</li>
-              <li><i class="fa-solid fa-check-circle"></i> Deep Learning for Derivative Forecasting</li>
-              <li><i class="fa-solid fa-check-circle"></i> Direct FinTech Lab Incubation Project</li>
-              <li><i class="fa-solid fa-check-circle"></i> Guaranteed Executive Placement Interviews</li>
+              <li><i class="fa-solid fa-circle-check"></i> Everything in 60-Day Immersion</li>
+              <li><i class="fa-solid fa-circle-check"></i> Custom Fine-tuned LLM Financial Copilots</li>
+              <li><i class="fa-solid fa-circle-check"></i> High-Scale Decentralized Finance & RegTech</li>
+              <li><i class="fa-solid fa-circle-check"></i> Capstone Project with Institutional Mentors</li>
+              <li><i class="fa-solid fa-circle-check"></i> Guaranteed Interview Fast-Track In Global Fintech</li>
             </ul>
           </div>
-          <button class="btn-book btn-book-secondary" onclick="triggerBooking('125-Day Fellowship', '₹54,999')">Apply for 125-Day Seat</button>
+          <button class="book-btn" onclick="openBookingModal('125 Days Mastery', '₹54,000')">Reserve Seat</button>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Luxury Footer -->
+  <!-- SEO Blog Preview -->
+  <section class="blog-preview">
+    <div class="container">
+      <div class="article-box">
+        <span style="color: var(--gold-primary); font-weight: 600; font-size: 0.85rem; letter-spacing: 1px;">TRENDING SEO EDITORIAL</span>
+        <h3>Why Commerce Graduates (B.Com/BBA/MBA) Are Dominating High-Salary Fintech Roles in 2026</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">
+          Pure coders often fail to understand credit spreads, GAAP standards, or derivative settlement pipelines. Discover how blending core financial knowledge with modern predictive AI frameworks unlocks salaries 3x higher than classical management positions.
+        </p>
+        <a href="blog.html" class="read-more-link">Read Executive Whitepaper & Analysis <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <div class="footer-content">
-      <div class="footer-logo">
-        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="50" cy="50" r="45" stroke="#e5b869" stroke-width="6"/>
-          <path d="M30 65L50 30L70 65" stroke="#00e5ff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="50" cy="45" r="7" fill="#e5b869"/>
-        </svg>
-        <span class="footer-brand">nammaweb ai</span>
+    <div class="container">
+      <div class="footer-logo-container">
+        <img src="logo.png" alt="NammaWeb Official Logo" class="footer-logo-img" />
+        <div class="footer-brand-title">NAMMAWEB</div>
         <a href="mailto:info@nammaweb.com" class="footer-email">info@nammaweb.com</a>
       </div>
-      <p class="footer-rights">© 2026 NammaWeb AI Research Lab & Learning Suite. All Rights Reserved.</p>
+      <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto; font-size: 0.9rem;">
+        NammaWeb AI Learning Suite. Dedicated to equipping B.Com, BBA, and MBA cohorts with predictive enterprise fintech algorithms and quantitative capabilities.
+      </p>
+      <div class="footer-meta">
+        &copy; 2026 NammaWeb. All Rights Reserved. Bengaluru • Singapore • London.
+      </div>
     </div>
   </footer>
 
-  <!-- WhatsApp Conversational Hook Popup -->
-  <div id="whatsappModal" class="whatsapp-popup" role="dialog" aria-label="WhatsApp Assistance">
-    <button class="popup-close" id="popupCloseBtn" aria-label="Close Popup">&times;</button>
-    <div class="popup-header">
+  <!-- Booking Modal -->
+  <div class="modal" id="bookingModal">
+    <div class="modal-content">
+      <button class="close-modal" onclick="closeBookingModal()">&times;</button>
+      <h3 style="font-family: var(--font-heading); color: var(--gold-primary); margin-bottom: 0.5rem;" id="modalCohortTitle">Secure Your Seat</h3>
+      <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1.5rem;" id="modalPriceLabel">Plan Price: ₹0</p>
+      
+      <form onsubmit="handleFormSubmit(event)">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" required placeholder="e.g. Anand Sharma" />
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" required placeholder="name@institution.com" />
+        </div>
+        <div class="form-group">
+          <label>Phone Number (WhatsApp)</label>
+          <input type="tel" required placeholder="+91 9876543210" />
+        </div>
+        <div class="form-group">
+          <label>Academic / Professional Background</label>
+          <select required>
+            <option value="B.Com">B.Com Student / Graduate</option>
+            <option value="BBA">BBA Student / Graduate</option>
+            <option value="MBA">MBA / Executive Management</option>
+            <option value="Other">Finance Professional / CA / CFA</option>
+          </select>
+        </div>
+        <button type="submit" class="submit-enroll-btn">Complete Priority Application</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- WhatsApp Interactive Pop-in Widget -->
+  <div class="whatsapp-widget">
+    <div class="whatsapp-bubble" id="waBubble">
+      👋 Speaking with an admissions director? Chat instantly on <strong>7676546577</strong>.
+    </div>
+    <a href="https://wa.me/917676546577?text=Hello%20NammaWeb%20AI%2C%20I%20am%20interested%20in%20the%20Fintech%20AI%20%26%20Analytics%20Cohort%20(B.Com%2FBBA%2FMBA)." target="_blank" class="whatsapp-btn" aria-label="Chat on WhatsApp">
       <i class="fa-brands fa-whatsapp"></i>
-      <div>
-        <h4>FinTech Advisor</h4>
-        <small style="color: #8696a0; font-size: 0.72rem;">Typically replies instantly</small>
-      </div>
-    </div>
-    <div class="popup-body">
-      <p>Have questions regarding whether the <strong>30, 60, or 125-day</strong> cohort aligns with your B.Com, BBA, or MBA background? Connect with our senior academic counselor directly.</p>
-    </div>
-    <a href="https://wa.me/917676546577?text=Hello%20NammaWeb%20AI,%20I%20am%20interested%20in%20the%20FinTech%20AI%20%26%20Analytics%20(B.Com/BBA/MBA)%20Learning%20Suite.%20Please%20guide%20me%20on%20admissions." target="_blank" class="popup-btn">
-      <i class="fa-brands fa-whatsapp"></i> Chat on +91 7676546577
     </a>
   </div>
 
   <script>
-    // Direct-Response Marketing Logic: Timed Popup Trigger
-    window.addEventListener('DOMContentLoaded', () => {
-      const popup = document.getElementById('whatsappModal');
-      const closeBtn = document.getElementById('popupCloseBtn');
+    function openBookingModal(cohortName, price) {
+      document.getElementById('modalCohortTitle').innerText = 'Enroll: ' + cohortName;
+      document.getElementById('modalPriceLabel').innerText = 'Investment: ' + price + ' + applicable GST';
+      document.getElementById('bookingModal').classList.add('active');
+    }
 
-      // Pop in after 4 seconds (Optimized for user engagement without increasing bounce rate)
-      setTimeout(() => {
-        popup.classList.add('active');
-      }, 4000);
+    function closeBookingModal() {
+      document.getElementById('bookingModal').classList.remove('active');
+    }
 
-      closeBtn.addEventListener('click', () => {
-        popup.classList.remove('active');
-      });
-    });
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      alert('Thank you for applying to NammaWeb AI Learning Suite. Our executive admissions counselor will contact you within 4 hours.');
+      closeBookingModal();
+    }
 
-    // Handle Direct Booking Redirection with Pre-filled WhatsApp Payload
-    function triggerBooking(tierName, price) {
-      const message = encodeURIComponent(`Hello NammaWeb AI Admissions, I would like to book the "${tierName}" priced at ${price} for the FinTech AI & Analytics (B.Com/BBA/MBA) program. Please share the direct enrollment protocol.`);
-      window.open(`https://wa.me/917676546577?text=${message}`, '_blank');
+    window.onclick = function(event) {
+      const modal = document.getElementById('bookingModal');
+      if (event.target == modal) {
+        closeBookingModal();
+      }
     }
   </script>
 </body>
